@@ -8,7 +8,7 @@ namespace Demo.Controllers
 {
     public class RegionController : Controller
     {
-        // GET: Region
+        // GET: Region c est le bug a fixé!!
         public ActionResult Index()
         {
             return View();
