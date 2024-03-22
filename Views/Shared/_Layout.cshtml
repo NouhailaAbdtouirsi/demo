@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark">
+        <div class="container">
+            <a href="../" class="navbar-brand">Bootswatch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item nav-link">@Html.ActionLink("Accueil", "Index", "Home")</li>
+                    <li class="nav-item nav-link">@Html.ActionLink("Region", "Index", "Region")</li>
+                    <li class="nav-item nav-link">@Html.ActionLink("Villes", "Index", "Villes")</li>
+                    <li class="nav-item nav-link">@Html.ActionLink("Personne", "Index", "Personne")</li>
+
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/Jquery.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</body>
+</html>
