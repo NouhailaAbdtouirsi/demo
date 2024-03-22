@@ -6,10 +6,9 @@ using System.Web.Mvc;
 
 namespace Demo.Controllers
 {
-    //simple modification
-    public class PersonneController : Controller
+    public class LoginController : Controller
     {
-        // GET: Personne
+        // GET: Login
         public ActionResult Index()
         {
             return View();
